@@ -7,7 +7,7 @@ A collection of templated-projects in LaTeX for academic publications
 
 - [**ITESO_Thesis**](ITESO_Thesis/) Contains a format often used for a graduate thesis document, and/or, a thesis-like document in LaTeX.
 
-![Alt text](images/ITESO_Thesis_Example.png)
+![Alt text](images/ITESO_Thesis_example.png)
 
 ### Disclaimer
 
