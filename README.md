@@ -3,11 +3,11 @@
 
 A collection of templated-projects in LaTeX for academic publications
 
-## ITESO-MAF Template
+## ITESO-Thesis
 
-- [**ITESO_MAF_Template**](ITESO_MAF_Template/) Contains the official format for a Thesis, and/or, a thesis-like document in LaTeX.
+- [**ITESO_Thesis**](ITESO_Thesis/) Contains a format often used for a graduate thesis document, and/or, a thesis-like document in LaTeX.
 
-![Alt text](images/iteso_maf_template.png)
+![Alt text](images/ITESO_Thesis_Example.png)
 
 ### Disclaimer
 
