@@ -1,0 +1,98 @@
+\documentclass[justified,twoside]{tufte-book}
+\usepackage[noend]{algpseudocode}
+\usepackage{algorithm}
+\usepackage{amsmath,mathtools}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{units}
+\usepackage{calrsfs}
+\usepackage{listings}
+
+\include{files/preamble}
+
+\definecolor{testcolor}{cmyk}{0.62, 0.28, 0.02, 0.03}
+\DeclareCaptionFont{blue}{\color{testcolor}}
+\captionsetup{labelfont={sc, large, blue}}
+
+\vbadness=14500 % quitar el warning de underfull hbox enfadoso
+\hbadness=14500
+
+% -- --------------------------------------------------------------------------------------------------- -- %
+% Title page metadata
+% -- --------------------------------------------------------------------------------------------------- -- %
+% Author
+\def\myauthor{ Author } 
+% Thesis title
+\def\mytitle{ Title }
+% Date (Month, year)
+\def\mydate{Month, 2024} 
+% Advisor
+\def\myadvisors{ Advisor } 
+% -- --------------------------------------------------------------------------------------------------- -- %
+
+\begin{document}
+% -- ------------------------------------------------------------------------ --------------------------- -- %
+% Front matter
+% -- --------------------------------------------------------------------------------------------------- -- %
+\frontmatter
+
+% -- ----------------------------------------margin----------------------------------------------------------- -- %
+% Title page
+% -- --------------------------------------------------------------------------------------------------- -- %
+\cleardoublepage
+\include{files/titlepage}
+
+% -- --------------------------------------------------------------------------------------------------- -- %
+% Abstract
+% -- --------------------------------------------------------------------------------------------------- -- %
+\cleardoublepage
+\include{chapters/abstractpage}
+
+% -- --------------------------------------------------------------------------------------------------- -- %
+% Table of contents
+% -- --------------------------------------------------------------------------------------------------- -- %
+\cleardoublepage
+\dominitoc
+\tableofcontents
+%
+\cleardoublepage
+\listoffigures
+%
+\cleardoublepage
+\listoftables
+
+% -- --------------------------------------------------------------------------------------------------- -- %
+% Dedication
+% -- --------------------------------------------------------------------------------------------------- -- %
+\cleardoublepage
+\include{chapters/dedication}
+
+\cleardoublepage
+
+% -- --------------------------------------------------------------------------------------------------- -- %
+% Start the main matter (normal chapters)
+% -- --------------------------------------------------------------------------------------------------- -- %
+
+% -- --------------------------------------------------------------------------------------------------- -- %
+\mainmatter
+% -- --------------------------------------------------------------------------------------------------- -- %
+
+% Introduction
+\include{chapters/chapter01}
+% Chapter 2
+\include{chapters/chapter02}
+% Chapter 3
+\include{chapters/chapter03}
+% Chapter 3
+\include{chapters/chapter04}
+
+% -- --------------------------------------------------------------------------------------------------- -- %
+% The back matter contains appendices, bibliographies, indices, glossaries, etc.
+% -- --------------------------------------------------------------------------------------------------- -- %
+\backmatter
+
+\bibliography{references/references}
+\bibliographystyle{apalike}
+\printindex
+
+\end{document}
